@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vineet Kumar - Portfolio</title>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $(".loader-overlay").fadeOut("slow").delay(800);
+                $("#bg-shape-1").addClass("d-block");
+                $("#bg-shape-2").addClass("d-block");
+                $("#aboutme").addClass("d-block");
+            }, 250);
+        });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5ee49a9f35.js"></script>
+    <noscript>
+        <style>.loader-overlay { display: none; } </style>
+    </noscript>
+    <style>
+        * > div {
+            /*border: 1px solid black;*/
+            /*min-height: 30px;*/
+        }
+    </style>
 <body>
-    <h1>Here we go..!!</h1>
+<div class="wrapper px-20">
+    <div class="loader-overlay"></div>
+    <header class="py-5"></header>
+    <div class="content">
+        <div class="container px-5">
+            <div id="aboutme" class="section section-box slideInUp animated">
+                <div class="py-5 px-3 pt-5">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="profile-photo p-5">
+                                <img class="rounded-circle" src="images/1da3ed6abcee45c482d957cca9e3dc5a-tr.png" width="300" height="300" alt=""></div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="profile-info">
+                                <div class="mb-3 clearfix">
+                                    <div class="profile-preword"><span>Hello</span></div>
+
+                                </div>
+                                <h1 class="profile-title">
+                                    <span>I'm</span>
+                                    Vineet Kumar									</h1>
+                                <h2 class="profile-position">Full Stack Developer</h2></div>
+                            <ul class="profile-list">
+                                <li class="clearfix">
+                                    <strong class="title">Age</strong>
+                                    <span class="cont">21</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">Address</strong>
+                                    <span class="cont">RZ 26P/39E, Indra Park, New Delhi, IN</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">E-mail</strong>
+                                    <span class="cont">vineet.m95@gmail.com</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">Phone</strong>
+                                    <span class="cont">+91 8860 775935</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong class="title">Freelance</strong>
+                                    <span class="cont">Available</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-box">
+                    <ul>
+                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <svg id="bg-shape-1" class="slideInLeft animated hidden-sm hidden-xs" height="519" width="758">
+        <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
+    </svg>
+    <svg id="bg-shape-2" class="slideInRight animated hidden-sm hidden-xs" height="536" width="633">
+        <polygon points="0,0,633,0,633,536"></polygon>
+    </svg>
+</div>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 </body>
 </html>
