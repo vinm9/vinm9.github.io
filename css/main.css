@@ -9,6 +9,17 @@ body {
     background-color: #f3f3f3 !important;
     font-family: 'Open Sans', sans-serif !important;
 }
+.quicksand {
+    font-family: Quicksand, sans-serif !important;
+    color: #010101;
+}
+p.quicksand{
+    font-size: 16px;
+    letter-spacing: .08em;
+}
+.text-box {
+    line-height: 1.875em;
+}
 /* floating background shapes */
 #bg-shape-1 {
     left: 0;
@@ -180,6 +191,49 @@ body {
     content: " ";
     display: table;
 }
+
+/* Signature animation */
+.signature-row{
+    height: 75px;
+}
+.signature {
+    display: none;
+    width: 75px;
+    height: 78px;
+    background-image: url(../images/sign-sprites-sm.png);
+    -webkit-animation: play 2s steps(92) 1;
+    -moz-animation: play 2s steps(92) 1;
+    -ms-animation: play 2s steps(92) 1;
+    -o-animation: play 2s steps(92) 1;
+    animation: play 2s steps(92) 1;
+    background-position: -6825px;
+}
+
+@-webkit-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -6900px; }
+}
+
+@-moz-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -6900px; }
+}
+
+@-ms-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -6900px; }
+}
+
+@-o-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -6900px; }
+}
+
+@keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -6900px; }
+}
+
 /* Education */
 .education {
     position: relative;
