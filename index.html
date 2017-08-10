@@ -16,6 +16,8 @@
                 $("#bg-shape-2").addClass("d-block");
                 $(".section.section-box").addClass("slideInUp animated");
                 $(".portfolio-section").addClass("slideInUp animated");
+                // Sript to create #hashtag anchors
+                $('.description em').each(function(){$(this).html($(this).html().replace(/#(\S*)/g,'<a target=\'_blank\' href="https://www.instagram.com/explore/tags/$1">#$1</a>'));})
             }, 0);
         });
     </script>
@@ -222,241 +224,203 @@
 
         </div>
     </div>
-    <!--<div class="content">-->
-        <!--<div id="portfolio" class="container p-5">-->
-            <!--<div class="px-3">-->
-                <!--<h2 class="mb-5 ml-5 pt-2 section-heading">Portfolio</h2>-->
-            <!--</div>-->
-            <!--<div class="grid">-->
-                <!--<div class="grid__item" data-size="1280x857">-->
-                    <!--<a href="images/instagram/1.jpg" class="img-wrap"><img src="images/instagram/1.jpg" alt="img06" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Mother's Love</h3>-->
-                            <!--<p>Raise your words not voice. It is rain that grows flowers, not thunder. <em>#flower #afterrain #beautyoflife #blossom #quoteoftheday #shotoniphone #waterdroplets #macro #randomclick</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x1280">-->
-                    <!--<a href="images/instagram/2.jpg" class="img-wrap"><img src="images/instagram/2.jpg" alt="img07" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Silent Killer</h3>-->
-                            <!--<p>Cows’ milk protein may be the single most significant chemical carcinogen to which humans are exposed. <em>&mdash; T. Colin Campbell</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x853">-->
-                    <!--<a href="images/instagram/3.jpg" class="img-wrap"><img src="images/instagram/3.jpg" alt="img08" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Senseless Suffering</h3>-->
-                            <!--<p>The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?' <em>&mdash; Jeremy Bentham</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="865x1280">-->
-                    <!--<a href="images/instagram/4.jpg" class="img-wrap"><img src="images/instagram/4.jpg" alt="img09" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Rabbit Intelligence</h3>-->
-                            <!--<p>If a rabbit defined intelligence the way man does, then the most intelligent animal would be a rabbit, followed by the animal most willing to obey the commands of a rabbit. <em>&mdash; Robert Brault</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x1280">-->
-                    <!--<a href="images/instagram/5.jpg" class="img-wrap"><img src="images/instagram/5.jpg" alt="img10" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Friendly Terms</h3>-->
-                            <!--<p>Man is the only animal that can remain on friendly terms with the victims he intends to eat until he eats them. <em>&mdash; Samuel Butler</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x850">-->
-                    <!--<a href="images/instagram/6.jpg" class="img-wrap"><img src="images/instagram/6.jpg" alt="img11" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Murder of Men</h3>-->
-                            <!--<p>The time will come when men such as I will look upon the murder of animals as they now look upon the murder of men.<em>&mdash; Leonardo Da Vinci</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x853">-->
-                    <!--<a href="images/instagram/7.jpg" class="img-wrap"><img src="images/instagram/7.jpg" alt="img01" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Highest Ethics</h3>-->
-                            <!--<p>Non-violence leads to the highest ethics, which is the goal of all evolution. Until we stop harming all other living beings, we are still savages <em>&mdash; Thomas Edison</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="958x1280">-->
-                    <!--<a href="images/instagram/8.jpg" class="img-wrap"><img src="images/instagram/8.jpg" alt="img02" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Pleasure, Amusement &amp; Convenience</h3>-->
-                            <!--<p>We do not need to eat animals, wear animals, or use animals for entertainment purposes, and our only defense of these uses is our pleasure, amusement, and convenience.<em>&mdash; Gary L. Francione</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="837x1280">-->
-                    <!--<a href="images/instagram/9.jpg" class="img-wrap"><img src="images/instagram/9.jpg" alt="img03" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Dinner</h3>-->
-                            <!--<p>We all love animals. Why do we call some 'pets' and others 'dinner'? <em>&mdash; K.D. Lang</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x961">-->
-                    <!--<a href="images/instagram/10.jpg" class="img-wrap"><img src="images/instagram/10.jpg" alt="img04" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Appetite or Suffering?</h3>-->
-                            <!--<p>Could you look an animal in the eyes and say to it, 'My appetite is more important than your suffering'? <em>&mdash; Moby</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x1131">-->
-                    <!--<a href="images/instagram/11.jpg" class="img-wrap"><img src="images/instagram/11.jpg" alt="img05" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>The Corpse</h3>-->
-                            <!--<p>Recognize meat for what it really is: the antibiotic- and pesticide-laden corpse of a tortured animal. <em>&mdash; Ingrid Newkirk</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x857">-->
-                    <!--<a href="images/instagram/12.jpg" class="img-wrap"><img src="images/instagram/12.jpg" alt="img06" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Mother's Love</h3>-->
-                            <!--<p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <!--<div class="grid__item" data-size="1280x1280">-->
-                    <!--<a href="images/instagram/13.jpg" class="img-wrap"><img src="images/instagram/13.jpg" alt="img07" />-->
-                        <!--<div class="description description&#45;&#45;grid">-->
-                            <!--<h3>Silent Killer</h3>-->
-                            <!--<p>Cows’ milk protein may be the single most significant chemical carcinogen to which humans are exposed. <em>&mdash; T. Colin Campbell</em></p>-->
-                            <!--<div class="details">-->
-                                <!--<ul>-->
-                                    <!--<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>-->
-                                    <!--<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>-->
-                                    <!--<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>-->
-                                    <!--<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>-->
-                                    <!--<li><i class="icon icon-iso"></i><span>80</span></li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; /grid &ndash;&gt;-->
-            <!--<div class="preview">-->
-                <!--<button class="action action&#45;&#45;close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>-->
-                <!--<div class="description description&#45;&#45;preview"></div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="content">
+        <div id="portfolio" class="container p-5">
+            <div class="px-3">
+                <h2 class="mb-5 ml-5 pt-2 section-heading">Portfolio</h2>
+            </div>
+            <div class="grid">
+                <div class="grid__item" data-size="1280x857">
+                    <a href="images/instagram/1.jpg" class="img-wrap"><img src="images/instagram/1.jpg" alt="img06" />
+                        <div class="description description--grid">
+                            <p>Architecture is a Virtual art that speaks about itself.<em> #golcondafort #golconda #hyderabad #indianarchitecture #visualart #beautifulsky #randomclick #vacations </em></p>
+                            <div class="details">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Golconda Fort, Hyderabad</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>OnePlus X</span></li>
+                                    <li><i class="fa fa-heart"></i><span>34</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x1280">
+                    <a href="images/instagram/2.jpg" class="img-wrap"><img src="images/instagram/2.jpg" alt="img07" />
+                        <div class="description description--grid">
+                            <p>love is the flower you've got to let grow.. ❤<em>#flower #whiteflower #randomclick #beautiful #hyderabad #ramojifilmcity #vacations #instalove #flowerlover #perfectwhite #dianthus #whitedianthus #whiteandpinkdianthus</em></p>
+                            <div class="details">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Ramoji Film City, Hyderabad</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>OnePlus X</span></li>
+                                    <li><i class="fa fa-heart"></i><span>26</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x853">
+                    <a href="images/instagram/3.jpg" class="img-wrap"><img src="images/instagram/3.jpg" alt="img08" />
+                        <div class="description description--grid">
+                            <p>😍😍<em>#randomclick #bush #overcliff #awesomeweather</em></p>
+                            <div class="details">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Cape Sounion, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>12</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="865x1280">
+                    <a href="images/instagram/4.jpg" class="img-wrap"><img src="images/instagram/4.jpg" alt="img09" />
+                        <div class="description description--grid">
+                            <p>😍🗼<em>#toureiffel #paris #beautifulplace</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Paris Eiffel Tower, France</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>15</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x1280">
+                    <a href="images/instagram/5.jpg" class="img-wrap"><img src="images/instagram/5.jpg" alt="img10" />
+                        <div class="description description--grid">
+                            <p>"When I look into the eyes of an animal I don't see an animal. I see a living being. I see a friend. I feel a soul."<em>#puppy #dog #doglove #quoteoftheday #quotes #randomclick #hmritm #positivevibes #instalove #life #livingbeing #doglovers #doglife #puppylove #puppylovers #newdelhi #streetdog #zenphone</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>HMR Institute of Technology & Management</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>ASUS Zenfone Max</span></li>
+                                    <li><i class="fa fa-heart"></i><span>38</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x850">
+                    <a href="images/instagram/6.jpg" class="img-wrap"><img src="images/instagram/6.jpg" alt="img11" />
+                        <div class="description description--grid">
+                            <p>Because when you stop and look around, this life is pretty amazing.<em>#sunset #skyporn #delhi #raremoments #beautifulsky #randomclick #quoteoftheday</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Palam, New Delhi</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>37</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x853">
+                    <a href="images/instagram/7.jpg" class="img-wrap"><img src="images/instagram/7.jpg" alt="img01" />
+                        <div class="description description--grid">
+                            <p>Throwback to one of the most beautiful place I’ve ever been to.. <em>#capesunion #greece #yearoldpic #sea #50shadesofsea #cliff #love</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Cape Sounion, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>42</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="958x1280">
+                    <a href="images/instagram/8.jpg" class="img-wrap"><img src="images/instagram/8.jpg" alt="img02" />
+                        <div class="description description--grid">
+                            <p>Butterflies can't see their wings. They can't see how truly beautiful they are , but everyone else can.
+                                People are like that as well.<em>#butterflies #ramojifilmcity #colourful #pretty #beautiful #quoteoftheday #wings #fly #hyderabad #instalove #vacations #lovebutterflies</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Ramoji Film City, Hyderabad</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>OnePlus X</span></li>
+                                    <li><i class="fa fa-heart"></i><span>31</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="837x1280">
+                    <a href="images/instagram/9.jpg" class="img-wrap"><img src="images/instagram/9.jpg" alt="img03" />
+                        <div class="description description--grid">
+                            <p>Raise your words not voice. It is rain that grows flowers, not thunder. <em>#flower #afterrain #beautyoflife #blossom #quoteoftheday #shotoniphone #waterdroplets #macro #randomclick</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Palam, New Delhi</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>38</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x961">
+                    <a href="images/instagram/10.jpg" class="img-wrap"><img src="images/instagram/10.jpg" alt="img04" />
+                        <div class="description description--grid">
+                            <p>Life is not about who you once were, it is about who you are right now, and the person you have the potential to be. <em></em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>The Mall Athens, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>9</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x1131">
+                    <a href="images/instagram/11.jpg" class="img-wrap"><img src="images/instagram/11.jpg" alt="img05" />
+                        <div class="description description--grid">
+                            <p>I fell in love with the place! You know, the people, the bourbon, the music... It's in the air. It's something you can't describe on camera.<em></em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Heraclion Crete, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>22</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x857">
+                    <a href="images/instagram/12.jpg" class="img-wrap"><img src="images/instagram/12.jpg" alt="img06" />
+                        <div class="description description--grid">
+                            <p>😍😌<em>#beautiful #sunset #sounion #archeological #sites</em></p>
+                            <div class="details">
+                               <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Cape Sounion, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>24</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="1280x1280">
+                    <a href="images/instagram/13.jpg" class="img-wrap"><img src="images/instagram/13.jpg" alt="img07" />
+                        <div class="description description--grid">
+                            <p><em>#beautiful #archeological #sites #sounion #awesomeday</em></p>
+                            <div class="details">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Cape Sounion, Greece</span></li>
+                                    <li><i class="fa fa-mobile-phone"></i><span>iPhone 6</span></li>
+                                    <li><i class="fa fa-heart"></i><span>24</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /grid -->
+            <div class="preview">
+                <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+                <div class="description description--preview"></div>
+            </div>
+        </div>
+    </div>
     <svg id="bg-shape-1" class="slideInLeft animated hidden-sm hidden-xs" height="519" width="758">
         <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
     </svg>
