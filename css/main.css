@@ -197,9 +197,12 @@ p.quicksand{
     height: 75px;
 }
 .signature {
+    display: none;
     width: 75px;
     height: 78px;
     background-image: url(../images/sign-sprites-sm.png);
+    -webkit-animation-delay: 8s; /* Safari 4.0 - 8.0 */
+    animation-delay: 8s;
     -webkit-animation: play 2s steps(92) 1;
     -moz-animation: play 2s steps(92) 1;
     -ms-animation: play 2s steps(92) 1;
