@@ -197,7 +197,6 @@ p.quicksand{
     height: 75px;
 }
 .signature {
-    display: none;
     width: 75px;
     height: 78px;
     background-image: url(../images/sign-sprites-sm.png);
