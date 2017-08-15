@@ -273,7 +273,7 @@ p.quicksand{
     border: 5px solid #fff;
     background-color: #414855;
 }
-.education-box h3 {
+.education-box h3, .sub-heading {
     letter-spacing: 0;
     font-size: 0.938em;
     margin-top: 15px;
@@ -281,6 +281,10 @@ p.quicksand{
     color: #3d4451;
     font-weight: 700;
     line-height: 1.1;
+}
+.sub-heading {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
 }
 .education-box h3 p {
     font-weight: 500;
@@ -498,4 +502,20 @@ a.basic.label:hover {
     .modal-xl {
         max-width: 80% !important;
     }
+}
+
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.skill-items {
+    text-align: center;
+}
+.skill-items img, .skill-items svg{
+    height: 70px;
+}
+.skill-items .skill {
+    display: block;
 }
