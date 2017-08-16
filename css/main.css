@@ -74,6 +74,7 @@ p.quicksand{
 .profile-preword {
     float: left;
     margin-bottom: 10px;
+    animation-delay: 0.8s;
 }
 .profile-preword span{
     color: #fff;
@@ -518,4 +519,35 @@ img.responsive-img {
 }
 .skill-items .skill {
     display: block;
+}
+
+@keyframes fadeInLeftSmall {
+    from {
+        opacity: 0;
+        transform: translate3d(-5%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeftSmall {
+    animation-name: fadeInLeftSmall;
+}
+@keyframes fadeInRightSmall {
+    from {
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRightSmall {
+    animation-name: fadeInRightSmall;
 }
