@@ -74,7 +74,7 @@
 		extend( this.options, options );
 		
 		this.items = [].slice.call(this.gridEl.querySelectorAll('.grid__item'));
-		this.previewEl = nextSibling(this.gridEl);
+		this.previewEl = document.querySelector('.preview');
 		this.isExpanded = false;
 		this.isAnimating = false;
 		this.closeCtrl = this.previewEl.querySelector('button.action--close');
