@@ -570,6 +570,10 @@ img.responsive-img {
 .menu-item img{
     transition: background ease 1s;
 }
+.menu-item span{
+    color: #3d4451;
+    opacity: 0;
+}
 .menu-item:hover {
     transform: scale(0.9);
     transition: transform ease-out 0.2s;
@@ -580,7 +584,11 @@ img.responsive-img {
 }
 .menu-item:hover img {
     background: #e86767;
-    transition: background ease 1s;
+    transition: background ease 0.5s;
+}
+.menu-item:hover span {
+    opacity: 1;
+    transition: opacity ease-out 0.5s;
 }
 /*.menu-item {*/
     /*border: 1px solid #3d4451;*/
@@ -609,4 +617,7 @@ img.responsive-img {
 .scroll-to-top:hover svg g > path{
     fill: #3d4451;
     transition: fill 0.2s;
+}
+.menu-bar a:link , .menu-bar a:visited, .menu-bar a:hover, .menu-bar a:active {
+    text-decoration: none;
 }
