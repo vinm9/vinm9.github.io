@@ -14,6 +14,7 @@
     <script>
         $(window).on('load', function () {
             setTimeout(function () {
+                window.location.href = "#top";
                 $(".loader-overlay").fadeOut("slow");
                 $("#bg-shape-1").addClass("d-block");
                 $("#bg-shape-2").addClass("d-block");
@@ -56,7 +57,7 @@
     </script>
 </head>
 <body>
-<div class="wrapper px-20">
+<div id="top" class="wrapper px-20">
     <div class="loader-overlay"></div>
     <header class="py-5"></header>
     <div class="row mx-5 mb-4 justify-content-center text-center menu-bar" data-spy="affix" data-offset-top="20">
@@ -66,7 +67,7 @@
             </div></a>
         </div>
         <div class="col-sm-1">
-            <a href="#tech-skills"><div class="menu-item pt-1">
+            <a href="#tech-skills"><div class="menu-item mx-auto pt-1">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -149,7 +150,7 @@
             </div></a>
         </div>
         <div class="col-sm-1">
-            <a href="#work-experience"><div class="menu-item">
+            <a href="#work-experience"><div class="menu-item mx-auto">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="Layer_1" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -207,7 +208,7 @@
             </div></a>
         </div>
         <div class="col-sm-1">
-            <a href="#my-education"><div class="menu-item">
+            <a href="#my-education"><div class="menu-item mx-auto">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.004 512.004" style="enable-background:new 0 0 512.004 512.004;" xml:space="preserve">
@@ -297,7 +298,7 @@
             </div></a>
         </div>
         <div class="col-sm-1">
-            <a href="#my-project"><div class="menu-item">
+            <a href="#my-project"><div class="menu-item mx-auto">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -389,7 +390,7 @@
             </div></a>
         </div>
         <div class="col-sm-1">
-            <a href="#portfolio"><div class="menu-item">
+            <a href="#portfolio"><div class="menu-item mx-auto">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="Capa_1" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1550,13 +1551,13 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.signature').css("display", "block");
-            }
-        });
-    </script>
+    <a href="#top" id="btn-scroll-to-top" class="animated"><div class="scroll-to-top p-2">
+        <!--?xml version='1.0' encoding='utf-8'?-->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+            <g><path d="M3.352,48.296l28.56-28.328l28.58,28.347c0.397,0.394,0.917,0.59,1.436,0.59c0.52,0,1.04-0.196,1.436-0.59   c0.793-0.787,0.793-2.062,0-2.849l-29.98-29.735c-0.2-0.2-0.494-0.375-0.757-0.475c-0.75-0.282-1.597-0.107-2.166,0.456   L0.479,45.447c-0.793,0.787-0.793,2.062,0,2.849C1.273,49.082,2.558,49.082,3.352,48.296z" fill="#919191"></path></g>
+        </svg>
+    </div></a>
+</div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
             integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
@@ -1633,6 +1634,15 @@
                 }
             });
         })();
+
+        $(document).scroll(function() {
+            if (document.body.scrollTop > 20) {
+                document.getElementById("btn-scroll-to-top").style.animationName = "fadeInUp";
+            } else if (document.body.scrollTop == 0){
+                document.getElementById("btn-scroll-to-top").style.animationName = "fadeOutDown";
+            }
+        });
+
         // Select all links with hashes
         $('a[href*="#"]')
         // Remove links that don't actually link to anything
