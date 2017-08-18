@@ -551,3 +551,40 @@ img.responsive-img {
 .fadeInRightSmall {
     animation-name: fadeInRightSmall;
 }
+
+/*.menu-bar div{*/
+    /*height:55px;*/
+/*}*/
+.menu-bar .profile-photo, .menu-item{
+    width: 55px;
+    height: 55px;
+}
+.menu-bar svg {
+    fill: #3d4451;
+    transition: fill 0.5s;
+}
+
+.menu-item{
+    transition: transform ease-out 0.2s;
+}
+.menu-item img{
+    transition: background ease 1s;
+}
+.menu-item:hover {
+    transform: scale(0.9);
+    transition: transform ease-out 0.2s;
+}
+.menu-item:hover svg {
+    fill: #e86767;
+    transition: fill 0.5s;
+}
+.menu-item:hover img {
+    background: #e86767;
+    transition: background ease 1s;
+}
+/*.menu-item {*/
+    /*border: 1px solid #3d4451;*/
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+/*}*/
