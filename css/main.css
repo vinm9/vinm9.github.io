@@ -668,3 +668,13 @@ footer .social-box {
 footer .social-box ul li a .fa {
     color: #a1a1a1;
 }
+.social-box .btn-outline-light {
+    border-radius: 35px;
+    border: 1px solid rgba(248, 249, 250, 0.5);
+    color: rgba(248, 249, 250, 0.9);
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 600;
+}
+.social-box .btn-outline-light:hover {
+    color: #e86767;
+}
