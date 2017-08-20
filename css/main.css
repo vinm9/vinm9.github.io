@@ -601,6 +601,7 @@ img.responsive-img {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    z-index: 100;
 }
 #btn-scroll-to-top, .scroll-to-top{
     height: 40px;
@@ -612,6 +613,7 @@ img.responsive-img {
     transition: transform ease-out 0.2s;
 }
 .scroll-to-top:hover{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     transform: scale(1.2);
 }
 .scroll-to-top:hover svg g > path{
@@ -620,4 +622,49 @@ img.responsive-img {
 }
 .menu-bar a:link , .menu-bar a:visited, .menu-bar a:hover, .menu-bar a:active {
     text-decoration: none;
+}
+body{
+    background: #e1e1e1;
+}
+#getintouch {
+    background: #e1e1e1;
+    position: relative;
+    bottom: 0;
+}
+#getintouch .form-control{
+    border: 0;
+    background: #d1d1d1;
+    color: #3d4451;
+}
+#getintouch .form-control:focus{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+#getintouch .btn-secondary{
+    background: #e86767;
+    color: #fff;
+    border:0;
+}
+#getintouch .btn-secondary:hover{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    transform: scale(1.1);
+    transition: transform ease 0.2s;
+}
+#getintouch .btn-secondary:active{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    transform: scale(1);
+    transition: transform ease 0.2s;
+}
+#getintouch a, #contact-form-success span {
+    text-decoration: none;
+    color: #e86767;
+}
+#getintouch a:hover, #getintouch a:focus, #contact-form-success span:hover, #contact-form-success span:focus{
+    font-weight: bold;
+}
+footer .social-box {
+    background: transparent;
+    padding: 0px;
+}
+footer .social-box ul li a .fa {
+    color: #a1a1a1;
 }
