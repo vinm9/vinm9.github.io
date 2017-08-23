@@ -2,8 +2,27 @@
     width: 100%;
     height: 100%;
     background: url('../images/preloader.gif') center no-repeat #FFF;
+    z-index: 99998;
+    position: fixed;
+}
+.small-screen-overlay {
+    font-family: Quicksand, sans-serif !important;
+    color: #3d4451;
+    width: 100%;
+    height: 100%;
     z-index: 99999;
     position: fixed;
+    background: white;
+    text-align: center;
+    display: none;
+}
+.small-screen-overlay span {
+    color: #e86767;
+}
+@media (max-width: 800px)  {
+    .small-screen-overlay{
+        display: block;
+    }
 }
 body {
     background-color: #f3f3f3 !important;
