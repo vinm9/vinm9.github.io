@@ -14,15 +14,9 @@
     position: fixed;
     background: white;
     text-align: center;
-    display: none;
 }
 .small-screen-overlay span {
     color: #e86767;
-}
-@media (max-width: 800px)  {
-    .small-screen-overlay{
-        display: block;
-    }
 }
 body {
     background-color: #f3f3f3 !important;
