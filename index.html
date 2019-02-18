@@ -541,15 +541,15 @@
                                 <h1 class="profile-title">
                                     <span>I'm</span>
                                     Vineet Kumar </h1>
-                                <h2 class="profile-position">Full Stack Developer</h2></div>
+                                <h2 class="profile-position">Senior Full Stack Developer</h2></div>
 
                             <div class="row">
                                 <div class="col-sm-12">
                                     <p class="quicksand text-box">
-                                        I am currently a full stack developer with a good learning curve,
-                                        Wants to leverage my skills to pursue a challenging position in a reputable and
-                                        futuristic organization providing me the platform to become a well-recognized
-                                        professional.
+                                        I have got a good understanding of front-end and back-end technologies.
+                                        I’m looking forward to leveraging my skills to pursue a challenging
+                                        position in a reputable and futuristic organization providing me with the
+                                        platform to become a well-recognized professional.
                                     </p>
                                 </div>
                                 <div class="signature-row col-sm-12 pr-5">
@@ -1180,7 +1180,7 @@
                                         <span>Mar <strong
                                                 class="text-upper">2017</strong> - <strong>Present</strong></span>
                                     </time>
-                                    <h3 class="wow fadeInLeftSmall animated">Full Stack Developer</h3>
+                                    <h3 class="wow fadeInLeftSmall animated">Senior Full Stack Developer</h3>
                                     <div class="wow education-logo fadeInLeftSmall animated">
                                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="150px"
                                              viewBox="0 0 1167.000000 230.000000" preserveAspectRatio="xMidYMid meet">
@@ -1198,13 +1198,13 @@
                                         </svg>
                                     </div>
                                     <span class="wow education-company fadeInLeftSmall animated">Kvantum Inc.</span>
-                                    <p class="wow fadeInLeftSmall animated">Worked on Node.js, Angular.js, React, Redis
-                                        Task
-                                        Queue, Elastic Search,
-                                        MongoDB, Python and many more Python and JavaScript libraries.
-                                        Built shell scripts to automate server process.
-                                        Scaled web applications and automated OS Level visualization
-                                        using Docker.</p>
+                                    <ul type="disk" class="wow fadeInLeftSmall animated">
+                                        <li>Delivere code for front-end/back-end on a daily/weekly basis that is robust, functional, and scalable.</li>
+                                        <li>Scaled web applications and automated OS Level virtualization using Docker.</li>
+                                        <li>Designed and developed wireframes, mockups, and multiple responsive web pages.</li>
+                                        <li>Build backend REST API services in Python/Node.js for data processing and data munching.</li>
+                                        <li>Build backend services using NodeJS, Elasticsearch and GraphQL independently</li>
+                                    </ul>
                                 </div>
                                 <div class="wow education-box fadeIn animated">
                                     <time class="wow education-date fadeInRightSmall animated">
@@ -1299,7 +1299,9 @@
                                     <div class="wow fadeInLeftSmall animated row">
                                         <div class="col-md-6">
                                             <p><strong><span class="font-weight-normal">&Pi;</span>-IDS</strong>
-                                                is a hardware based Intrusion Detection System (IDS)
+                                                is a hardware-based Intrusion Detection System (IDS) built on Raspberry Pi 3 which helps in the prevention of various cyber-attacks. It also provides a GUI for managing router configuration and IDS functions.
+                                                Also Published a Research paper on Comparative Analysis with IJERT. <a href="https://goo.gl/YufZPE" target="_blank">Link</a>
+
                                             </p>
                                             <div>
                                                 <a class="basic label">Raspberry Pi</a>
@@ -1869,14 +1871,14 @@
     })();
 
     $(document).scroll(function () {
-        if (document.body.scrollTop > 20) {
+        if ((document.body.scrollTop || document.documentElement.scrollTop) > 20) {
             document.getElementById("btn-scroll-to-top").style.animationName = "fadeInUp";
-        } else if (document.body.scrollTop == 0) {
+        } else if ((document.body.scrollTop || document.documentElement.scrollTop) == 0) {
             document.getElementById("btn-scroll-to-top").style.animationName = "fadeOutDown";
         }
-        if (document.body.scrollTop >= document.body.scrollHeight - 2.5 * $(window).height()) {
-            document.getElementById('bg-shape-1').style.top = (document.body.scrollHeight - 2.5 * $(window).height() - document.body.scrollTop);
-            document.getElementById('bg-shape-2').style.top = (document.body.scrollHeight - 2.5 * $(window).height() - document.body.scrollTop);
+        if ((document.body.scrollTop || document.documentElement.scrollTop) >= document.body.scrollHeight - 2.5 * $(window).height()) {
+            document.getElementById('bg-shape-1').style.top = (document.body.scrollHeight - 2.5 * $(window).height() - (document.body.scrollTop || document.documentElement.scrollTop));
+            document.getElementById('bg-shape-2').style.top = (document.body.scrollHeight - 2.5 * $(window).height() - (document.body.scrollTop || document.documentElement.scrollTop));
         } else {
             document.getElementById('bg-shape-1').style.top = 0;
             document.getElementById('bg-shape-2').style.top = 0;
